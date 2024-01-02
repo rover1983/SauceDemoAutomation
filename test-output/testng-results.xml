@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-31T22:04:46 MSK" name="Default suite" finished-at="2023-12-31T22:05:03 MSK" duration-ms="16678">
+    <groups>
+    </groups>
+    <test started-at="2023-12-31T22:04:46 MSK" name="Default test" finished-at="2023-12-31T22:05:03 MSK" duration-ms="16678">
+      <class name="tests.CartPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:46 MSK" name="setup" finished-at="2023-12-31T22:04:51 MSK" duration-ms="4579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login_with_valid_creds()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:51 MSK" name="login_with_valid_creds" finished-at="2023-12-31T22:04:52 MSK" duration-ms="761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_with_valid_creds -->
+        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:52 MSK" name="makePause" finished-at="2023-12-31T22:04:54 MSK" duration-ms="2005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePause -->
+        <test-method signature="add_item_to_cart_test()[pri:1, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:54 MSK" name="add_item_to_cart_test" finished-at="2023-12-31T22:04:54 MSK" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_item_to_cart_test -->
+        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:54 MSK" name="makePause" finished-at="2023-12-31T22:04:56 MSK" duration-ms="2002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePause -->
+        <test-method signature="cart_test()[pri:2, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:56 MSK" name="cart_test" finished-at="2023-12-31T22:04:56 MSK" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cart_test -->
+        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:56 MSK" name="makePause" finished-at="2023-12-31T22:04:58 MSK" duration-ms="2006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePause -->
+        <test-method signature="check_cart_test()[pri:3, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:58 MSK" name="check_cart_test" finished-at="2023-12-31T22:04:58 MSK" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_cart_test -->
+        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:58 MSK" name="makePause" finished-at="2023-12-31T22:05:00 MSK" duration-ms="2012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePause -->
+        <test-method signature="go_from_cart_to_products_page()[pri:4, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:05:00 MSK" name="go_from_cart_to_products_page" finished-at="2023-12-31T22:05:00 MSK" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- go_from_cart_to_products_page -->
+        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:05:00 MSK" name="makePause" finished-at="2023-12-31T22:05:02 MSK" duration-ms="2016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePause -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:05:02 MSK" name="tearDown" finished-at="2023-12-31T22:05:03 MSK" duration-ms="469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CartPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
