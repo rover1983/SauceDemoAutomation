@@ -1,61 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-31T22:04:46 MSK" name="Default suite" finished-at="2023-12-31T22:05:03 MSK" duration-ms="16678">
+  <suite started-at="2024-01-04T23:40:14 MSK" name="Suite" finished-at="2024-01-04T23:40:40 MSK" duration-ms="25924">
     <groups>
+      <group name="negative">
+        <method signature="LoginPageTest.login_with_Wrong_creds(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginPageTest@782859e]" name="login_with_Wrong_creds" class="tests.LoginPageTest"/>
+      </group> <!-- negative -->
+      <group name="positive">
+        <method signature="LoginPageTest.login_with_valid_creds(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginPageTest@782859e]" name="login_with_valid_creds" class="tests.LoginPageTest"/>
+      </group> <!-- positive -->
     </groups>
-    <test started-at="2023-12-31T22:04:46 MSK" name="Default test" finished-at="2023-12-31T22:05:03 MSK" duration-ms="16678">
-      <class name="tests.CartPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:46 MSK" name="setup" finished-at="2023-12-31T22:04:51 MSK" duration-ms="4579" status="PASS">
+    <test started-at="2024-01-04T23:40:14 MSK" name="Test" finished-at="2024-01-04T23:40:40 MSK" duration-ms="25924">
+      <class name="tests.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginPageTest@782859e]" started-at="2024-01-04T23:40:14 MSK" name="setup" finished-at="2024-01-04T23:40:19 MSK" duration-ms="5535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login_with_valid_creds()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:51 MSK" name="login_with_valid_creds" finished-at="2023-12-31T22:04:52 MSK" duration-ms="761" status="PASS">
+        <test-method is-config="true" signature="setUpForEachTest()[pri:0, instance:tests.LoginPageTest@782859e]" started-at="2024-01-04T23:40:23 MSK" name="setUpForEachTest" finished-at="2024-01-04T23:40:25 MSK" duration-ms="1282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpForEachTest -->
+        <test-method signature="login_with_Wrong_creds(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginPageTest@782859e]" started-at="2024-01-04T23:40:25 MSK" name="login_with_Wrong_creds" data-provider="invalid_creds_provider" finished-at="2024-01-04T23:40:25 MSK" duration-ms="701" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_mess]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_with_Wrong_creds -->
+        <test-method is-config="true" signature="setUpForEachTest()[pri:0, instance:tests.LoginPageTest@782859e]" started-at="2024-01-04T23:40:25 MSK" name="setUpForEachTest" finished-at="2024-01-04T23:40:26 MSK" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpForEachTest -->
+        <test-method signature="login_with_valid_creds(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginPageTest@782859e]" started-at="2024-01-04T23:40:26 MSK" name="login_with_valid_creds" data-provider="valid_creds_provider" finished-at="2024-01-04T23:40:26 MSK" duration-ms="528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_with_valid_creds -->
-        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:52 MSK" name="makePause" finished-at="2023-12-31T22:04:54 MSK" duration-ms="2005" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- makePause -->
-        <test-method signature="add_item_to_cart_test()[pri:1, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:54 MSK" name="add_item_to_cart_test" finished-at="2023-12-31T22:04:54 MSK" duration-ms="232" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- add_item_to_cart_test -->
-        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:54 MSK" name="makePause" finished-at="2023-12-31T22:04:56 MSK" duration-ms="2002" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- makePause -->
-        <test-method signature="cart_test()[pri:2, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:56 MSK" name="cart_test" finished-at="2023-12-31T22:04:56 MSK" duration-ms="169" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cart_test -->
-        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:56 MSK" name="makePause" finished-at="2023-12-31T22:04:58 MSK" duration-ms="2006" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- makePause -->
-        <test-method signature="check_cart_test()[pri:3, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:58 MSK" name="check_cart_test" finished-at="2023-12-31T22:04:58 MSK" duration-ms="123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_cart_test -->
-        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:04:58 MSK" name="makePause" finished-at="2023-12-31T22:05:00 MSK" duration-ms="2012" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- makePause -->
-        <test-method signature="go_from_cart_to_products_page()[pri:4, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:05:00 MSK" name="go_from_cart_to_products_page" finished-at="2023-12-31T22:05:00 MSK" duration-ms="181" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- go_from_cart_to_products_page -->
-        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:05:00 MSK" name="makePause" finished-at="2023-12-31T22:05:02 MSK" duration-ms="2016" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- makePause -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartPageTest@d554c5f]" started-at="2023-12-31T22:05:02 MSK" name="tearDown" finished-at="2023-12-31T22:05:03 MSK" duration-ms="469" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@782859e]" started-at="2024-01-04T23:40:38 MSK" name="tearDown" finished-at="2024-01-04T23:40:39 MSK" duration-ms="1385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.CartPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- tests.LoginPageTest -->
+      <class name="tests.ProductsPageSortingTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsPageSortingTest@1be2019a]" started-at="2024-01-04T23:40:19 MSK" name="setup" finished-at="2024-01-04T23:40:23 MSK" duration-ms="3860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login_with_valid_creds()[pri:0, instance:tests.ProductsPageSortingTest@1be2019a]" started-at="2024-01-04T23:40:26 MSK" name="login_with_valid_creds" finished-at="2024-01-04T23:40:27 MSK" duration-ms="650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_with_valid_creds -->
+        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.ProductsPageSortingTest@1be2019a]" started-at="2024-01-04T23:40:27 MSK" name="makePause" finished-at="2024-01-04T23:40:29 MSK" duration-ms="2016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePause -->
+        <test-method signature="sortNameDesc_test()[pri:1, instance:tests.ProductsPageSortingTest@1be2019a]" started-at="2024-01-04T23:40:29 MSK" name="sortNameDesc_test" finished-at="2024-01-04T23:40:29 MSK" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortNameDesc_test -->
+        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.ProductsPageSortingTest@1be2019a]" started-at="2024-01-04T23:40:29 MSK" name="makePause" finished-at="2024-01-04T23:40:31 MSK" duration-ms="2009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePause -->
+        <test-method signature="sortNameAsc_test()[pri:2, instance:tests.ProductsPageSortingTest@1be2019a]" started-at="2024-01-04T23:40:31 MSK" name="sortNameAsc_test" finished-at="2024-01-04T23:40:31 MSK" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortNameAsc_test -->
+        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.ProductsPageSortingTest@1be2019a]" started-at="2024-01-04T23:40:31 MSK" name="makePause" finished-at="2024-01-04T23:40:33 MSK" duration-ms="2011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePause -->
+        <test-method signature="sortPriceAsc_test()[pri:3, instance:tests.ProductsPageSortingTest@1be2019a]" started-at="2024-01-04T23:40:33 MSK" name="sortPriceAsc_test" finished-at="2024-01-04T23:40:33 MSK" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortPriceAsc_test -->
+        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.ProductsPageSortingTest@1be2019a]" started-at="2024-01-04T23:40:33 MSK" name="makePause" finished-at="2024-01-04T23:40:35 MSK" duration-ms="2005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePause -->
+        <test-method signature="sortPriceDesc_test()[pri:4, instance:tests.ProductsPageSortingTest@1be2019a]" started-at="2024-01-04T23:40:35 MSK" name="sortPriceDesc_test" finished-at="2024-01-04T23:40:36 MSK" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortPriceDesc_test -->
+        <test-method is-config="true" signature="makePause()[pri:0, instance:tests.ProductsPageSortingTest@1be2019a]" started-at="2024-01-04T23:40:36 MSK" name="makePause" finished-at="2024-01-04T23:40:38 MSK" duration-ms="2008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePause -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsPageSortingTest@1be2019a]" started-at="2024-01-04T23:40:39 MSK" name="tearDown" finished-at="2024-01-04T23:40:40 MSK" duration-ms="747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ProductsPageSortingTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

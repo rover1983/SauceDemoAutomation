@@ -18,7 +18,6 @@ public class CartPageTest {
 	WebDriver driver;
 	ProductsPage products;
 	CartPage cartPage;
-	
 
 	@BeforeTest
 	public void setup() {
