@@ -70,6 +70,7 @@ public class ProductsPageTest {
 	
 	@AfterTest
 	public void tearDown() {
+		System.out.println("This class test finished");
 		driver.close();
 	}
 	
