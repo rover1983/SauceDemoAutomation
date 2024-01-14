@@ -72,4 +72,5 @@ public class ProductsPageTest {
 	public void tearDown() {
 		driver.close();
 	}
+	
 }
